@@ -13,10 +13,10 @@ tcp-concurrent: true
 global-client-fingerprint: chrome
 
 ### 如果使用的是裸核，需要将下面的注释去掉，方便ui界面的使用
-# external-controller: 0.0.0.0:9988
-# external-ui: ui
-# external-ui-url: 'https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip'
-# secret: "yyhhyyyyyy"
+external-controller: 0.0.0.0:9988
+external-ui: ui
+external-ui-url: 'https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip'
+secret: ""
 
 profile:
   store-selected: true
@@ -104,7 +104,7 @@ NodeParam: &NodeParam {type: http, interval: 86400, health-check: {enable: true,
 # 订阅合集
 proxy-providers:
   Node-1:
-    url: 'https://xsus.jolqx.cn/api/v1/client/subscribe?token=5fec9582af4fe3303372520aaa681d81'
+    url: 'https://sub.xfltd.cfd/cctv/user/client/get?token=NDY0MDg1OmI0Yzc3Mzg2MmQ4OGZiYWZmNWY5ODYzODc4NmI5NjJkY2FkZDEzNTU'
     <<: *NodeParam
     path: './proxy_provider/providers-1.yaml'
     override:
